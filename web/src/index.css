@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background font-sans text-text antialiased;
+  }
+  a:focus-visible,
+  button:focus-visible,
+  input[type='checkbox']:focus-visible,
+  input[type='radio']:focus-visible,
+  input[type='file']:focus-visible,
+  input[type='range']:focus-visible {
+    outline: 2px solid #c0603a;
+    outline-offset: 2px;
+  }
+  input,
+  textarea,
+  select {
+    outline: none;
+    box-shadow: none;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+    -webkit-text-fill-color: #1a1a1a;
+    transition: background-color 9999s ease-out 0s;
+    border-radius: inherit;
+    caret-color: #1a1a1a;
+  }
+}

@@ -1,0 +1,61 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#1a1f36',
+        primaryLight: '#2d3461',
+        secondary: '#f5f0e8',
+        accent: '#c0603a',
+        accentLight: '#e8845e',
+        background: '#faf9f7',
+        card: '#ffffff',
+        border: '#e8e3db',
+        muted: '#8a8580',
+        mutedLight: '#c4bfba',
+        text: '#1a1a1a',
+        textSecondary: '#5a5550',
+        success: '#2d7a4f',
+        warning: '#d97706',
+        error: '#dc2626',
+      },
+      borderRadius: {
+        sm: '8px',
+        md: '12px',
+        lg: '16px',
+        xl: '24px',
+      },
+      boxShadow: {
+        sm: '0 1px 4px rgba(0,0,0,0.06)',
+        md: '0 3px 8px rgba(0,0,0,0.10)',
+        lg: '0 6px 16px rgba(0,0,0,0.14)',
+      },
+      fontSize: {
+        xs: ['11px', '16px'],
+        sm: ['13px', '18px'],
+        md: ['15px', '22px'],
+        lg: ['17px', '24px'],
+        xl: ['20px', '28px'],
+        xxl: ['24px', '32px'],
+        xxxl: ['30px', '38px'],
+      },
+      fontWeight: {
+        regular: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+        extrabold: '800',
+      },
+      spacing: {
+        xs: '4px',
+        sm: '8px',
+        md: '16px',
+        lg: '24px',
+        xl: '32px',
+        xxl: '48px',
+      },
+    },
+  },
+  plugins: [],
+}
